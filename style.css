@@ -280,6 +280,7 @@ header {
   color: #ec4899;
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 }
 
 .social-proof .description {
@@ -380,6 +381,7 @@ header {
   color: #ec4899;
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 }
 
 .faq-section .description {
@@ -504,6 +506,7 @@ header {
   color: #ec4899;
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 }
 
 .contact-section .description {
@@ -640,8 +643,10 @@ footer p {
 
   .contacts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     text-align: center;
+    /* align-items: center; */
+    justify-content: center;
   }
 
   .contact1,
