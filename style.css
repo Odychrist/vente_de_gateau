@@ -156,7 +156,7 @@ header {
 
 .products-section .products-div {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 15px;
 }
@@ -460,6 +460,7 @@ header {
   color: #ffffff;
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 }
 
 .cta-section p {
@@ -594,15 +595,14 @@ footer p {
   .left-div {
     padding: 0px 20px 10px 20px;
     background:
-      linear-gradient(rgba(247, 243, 243, 0.5), rgba(221, 217, 217, 0.5)),
-      url("images/patissiere.png");
+      linear-gradient(#ffe6f4b6, #ffe6f4b6), url("images/patissiere.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   .left-div h2 {
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
   }
 
@@ -617,5 +617,36 @@ footer p {
   .bottom-text {
     font-size: 15px;
     margin-bottom: 10px;
+  }
+
+  .products-section .description {
+    text-align: center;
+  }
+
+  .products-section .products-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elements-div {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .questions-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    text-align: center;
+  }
+
+  .contact1,
+  .contact2,
+  .contact3 {
+    padding: 0;
   }
 }
