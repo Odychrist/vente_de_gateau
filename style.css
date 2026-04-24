@@ -572,9 +572,55 @@ footer p {
 .menu-bar {
   display: none;
   font-size: 17px;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
+  .special {
+    height: 100vh;
+    /* width: 100%; */
+    background: #ffe6f4;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    animation: affichage 0.8s forwards;
+  }
+
+  @keyframes affichage {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .special a {
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    opacity: 80%;
+  }
+
+  .special a:hover {
+    background-color: #ec4899;
+    color: white;
+  }
+
+  .special a:active {
+    transform: scale(0.95);
+  }
+
   .logo {
     font-size: 17px;
   }

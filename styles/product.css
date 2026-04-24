@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.title span {
+  color: #ec4899;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.description span {
+  font-weight: bold;
+}
+
+.products-section {
+  width: 100%;
+}
+
+footer {
+  background-color: #2e1120;
+  margin-top: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  .title {
+    width: 100%;
+    font-size: 35px;
+  }
+
+  .description {
+    text-align: center;
+    padding: 20px;
+  }
+}

@@ -1,5 +1,7 @@
 const btnsFaq = document.querySelectorAll(".btn-faq");
 const heroTitle = document.querySelector(".hero-title");
+const menuBar = document.querySelector(".menu-bar");
+const specialEl = document.querySelector(".special");
 
 /* function displayHeroTitle() {
   const words = heroTitle.textContent.split(" ");
@@ -33,5 +35,24 @@ btnsFaq.forEach((btn) => {
     }
   });
 });
+
+/* menuBar.addEventListener("click", () => {
+  const i = menuBar.querySelector("i");
+  if (i.classList.contains("fa-bars")) {
+    i.classList.remove("fa-bars");
+    i.classList.add("fa-check");
+    specialEl.style.display = "flex";
+    document.querySelector(".logo").style.display = "";
+    document.querySelector("main").style.display = "";
+    document.querySelector("footer").style.display = "";
+  } else {
+    i.classList.remove("fa-check");
+    i.classList.add("fa-bars");
+    specialEl.style.display = "";
+    document.querySelector("").style.display = "flex";
+    document.querySelector("main").style.display = "block";
+    document.querySelector("footer").style.display = "block";
+  }
+}); */
 
 // displayHeroTitle();
