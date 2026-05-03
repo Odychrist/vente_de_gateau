@@ -1,16 +1,35 @@
 const btnsFaq = document.querySelectorAll(".btn-faq");
-const heroTitle = document.querySelector(".hero-title");
-const menuBar = document.querySelector(".menu-bar");
+const menuBar = document.querySelector(".mobile-div");
+const btnMenu = document.getElementById("btn-menu");
 const specialEl = document.querySelector(".special");
+const titleHero = document.getElementById("hero-title");
+const btnCloseMenu = document.getElementById("btn-close");
 
-/* function displayHeroTitle() {
-  const words = heroTitle.textContent.split(" ");
-  heroTitle.innerHTML = words
-    .map((word, i) => {
-      return `<span style="animation-delay:${i * 0.2}s">${word}</span> `;
-    })
-    .join(" ");
-} */
+btnMenu.addEventListener("click", displayMenu);
+btnCloseMenu.addEventListener("click", hideMenu);
+
+function displayMenu() {
+  document.querySelector("main").style.display = "none";
+  document.querySelector("footer").style.display = "none";
+  menuBar.classList.add("active");
+}
+
+function hideMenu() {
+  document.querySelector("main").style.display = "flex";
+  document.querySelector("footer").style.display = "flex";
+  menuBar.classList.remove("active");
+}
+
+let index = 0;
+let text = "";
+const fullText = titleHero.innerHTML;
+
+function displayText() {
+  text += fullText.charAt(index);
+  index++;
+  titleHero.innerHTML = text;
+}
+
 btnsFaq.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     const questionDiv = e.target.closest(".question-div");
@@ -36,23 +55,8 @@ btnsFaq.forEach((btn) => {
   });
 });
 
-/* menuBar.addEventListener("click", () => {
-  const i = menuBar.querySelector("i");
-  if (i.classList.contains("fa-bars")) {
-    i.classList.remove("fa-bars");
-    i.classList.add("fa-check");
-    specialEl.style.display = "flex";
-    document.querySelector(".logo").style.display = "";
-    document.querySelector("main").style.display = "";
-    document.querySelector("footer").style.display = "";
-  } else {
-    i.classList.remove("fa-check");
-    i.classList.add("fa-bars");
-    specialEl.style.display = "";
-    document.querySelector("").style.display = "flex";
-    document.querySelector("main").style.display = "block";
-    document.querySelector("footer").style.display = "block";
-  }
-}); */
-
-// displayHeroTitle();
+if (index < fullText.length) {
+  setInterval(() => {
+    displayText();
+  }, 35);
+}
