@@ -9,14 +9,14 @@ btnMenu.addEventListener("click", displayMenu);
 btnCloseMenu.addEventListener("click", hideMenu);
 
 function displayMenu() {
-  document.querySelector("main").style.display = "none";
-  document.querySelector("footer").style.display = "none";
+  /* document.querySelector("main").style.display = "none";
+  document.querySelector("footer").style.display = "none"; */
   menuBar.classList.add("active");
 }
 
 function hideMenu() {
-  document.querySelector("main").style.display = "flex";
-  document.querySelector("footer").style.display = "flex";
+  /* document.querySelector("main").style.display = "flex";
+  document.querySelector("footer").style.display = "flex"; */
   menuBar.classList.remove("active");
 }
 
