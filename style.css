@@ -36,7 +36,7 @@ header {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
 }
@@ -209,7 +209,7 @@ header {
 
 .products-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 
