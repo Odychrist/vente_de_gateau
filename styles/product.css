@@ -32,12 +32,6 @@ main {
   width: 100%;
 }
 
-footer {
-  background-color: #2e1120;
-  margin-top: 30px;
-  text-align: center;
-  color: #ffffff;
-}
 @media (max-width: 600px) {
   .title {
     width: 100%;

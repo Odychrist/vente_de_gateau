@@ -60,3 +60,29 @@ if (index < fullText.length) {
     displayText();
   }, 35);
 }
+
+/* 
+<article class="card">
+  <h3 class="title">Gâteau chocolat</h3>
+  <button class="btn">Commander</button>
+</article>
+
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".card");
+    const title = card.querySelector(".title").textContent;
+
+    const message = `Bonjour j'aimerais commander : ${title}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    const phone = "229XXXXXXXX";
+
+    window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
+  });
+});
+
+const message = `Bonjour, je veux commander : ${title}. Pouvez-vous me donner le prix et les détails ?`;
+
+*/

@@ -107,14 +107,12 @@ header {
 /* HERO SECTION */
 .hero-section {
   width: 100%;
-  padding: 10px 20px;
 }
 
 .first-div {
   display: flex;
-  gap: 10px;
-  align-items: center;
-  margin: 0px 30px 0px 30px;
+  justify-content: center;
+  padding: 10px 20px 20px 10px;
 }
 
 .left-div {
@@ -125,8 +123,7 @@ header {
 }
 
 .left-div h2 {
-  font-size: 82px;
-  /* text-align: center; */
+  font-size: 75px;
 }
 
 .left-div .special {
@@ -161,8 +158,8 @@ header {
 }
 
 .right-div img {
-  width: 530px;
-  height: 470px;
+  width: 500px;
+  height: 450px;
   animation: zoomImg 4s ease forwards;
 }
 
@@ -192,6 +189,7 @@ header {
   flex-direction: column;
   gap: 10px;
   padding: 20px;
+  justify-content: center;
 }
 
 .products-section .title {
@@ -209,7 +207,7 @@ header {
 
 .products-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
@@ -292,12 +290,13 @@ header {
   transform: scale(0.95);
 }
 
+.view-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .products-section a {
-  margin-left: 40%;
-  margin-right: 40%;
   margin-top: 20px;
-  width: 215px;
-  text-align: center;
   text-decoration: none;
   color: black;
   opacity: 80%;
@@ -564,58 +563,87 @@ header {
   margin-bottom: 15px;
 }
 
-.contacts {
-  width: 100%;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  /* padding: 0px 150px; */
-  /* border-right: 1px solid black; */
-}
-
-.contact1,
-.contact2,
-.contact3 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 100px;
-}
-
-.contact1,
-.contact2 {
-  border-right: 2px solid rgb(209, 204, 204);
-}
-
-.contact1 h3,
-.contact2 h3,
-.contact3 h3 {
-  font-size: 14px;
-  opacity: 70%;
-}
-
-.contact1 h3 {
-  color: green;
-}
-
-.contact2 p,
-.contact3 p {
-  font-size: 18px;
-  font-weight: bold;
-}
-
 /* FOOTER SECTION */
 footer {
-  background-color: #ec4899;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #251d21;
+  padding: 20px;
+  color: white;
 }
 
-footer p {
+footer h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer .description {
   text-align: center;
   color: white;
   font-size: 15px;
+  margin-bottom: 20px;
+}
+
+address {
+  font-style: normal;
+  color: rgb(235, 234, 234);
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.contacts div {
+  height: 100px;
+  width: 300px;
+  border: 1px solid #eb278950;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  gap: 15px;
+}
+
+.contact1 h3 {
+  color: #eb2789;
+}
+.contact4 h3,
+.contact3 h3 {
+  color: #e4cdd8;
+}
+
+.contact2 h3 {
+  color: #25d366;
+}
+
+.contact4 a,
+.contact3 a {
+  text-decoration: none;
+}
+
+.contact2 i {
+  font-size: 30px;
+  color: #25d366;
+}
+
+footer hr {
+  width: 80%;
+  margin-bottom: 10px;
+  /* height: 1px; */
+  border: 1px solid #e4cdd873;
 }
 
 @media (max-width: 700px) {

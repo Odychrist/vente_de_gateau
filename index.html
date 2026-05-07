@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -18,15 +18,15 @@
         <button id="btn-close"><i class="fa-solid fa-xmark"></i></button>
         <nav class="mobile-nav-div">
           <a href="index.html">Accueil</a>
-          <a href="pages/products.html">Produits</a>
-          <a href="pages/about.html">A propos</a>
+          <a href="./pages/products.html">Produits</a>
+          <a href="./pages/about.html">A propos</a>
         </nav>
       </div>
 
       <nav class="nav-div">
         <a href="index.html">Accueil</a>
-        <a href="pages/products.html">Produits</a>
-        <a href="pages/about.html">A propos</a>
+        <a href="./pages/products.html">Produits</a>
+        <a href="./pages/about.html">A propos</a>
       </nav>
     </header>
 
@@ -78,7 +78,7 @@
               <span>(45)</span>
             </div>
 
-            <button>Commander sur WhatsApp</button>
+            <button class="btn-cmd">Commander sur WhatsApp</button>
           </article>
 
           <article class="product-div">
@@ -97,7 +97,7 @@
               <span>(24)</span>
             </div>
 
-            <button>Commander sur WhatsApp</button>
+            <button class="btn-cmd">Commander sur WhatsApp</button>
           </article>
 
           <article class="product-div">
@@ -116,7 +116,7 @@
               <span>(32)</span>
             </div>
 
-            <button>Commander sur WhatsApp</button>
+            <button class="btn-cmd">Commander sur WhatsApp</button>
           </article>
 
           <article class="product-div">
@@ -135,12 +135,14 @@
               <span>(11)</span>
             </div>
 
-            <button>Commander sur WhatsApp</button>
+            <button class="btn-cmd">Commander sur WhatsApp</button>
           </article>
         </div>
-        <a href="./pages/products.html"
-          >Voir tous les produits <i class="fa-solid fa-arrow-right"></i
-        ></a>
+        <div class="view-product">
+          <a href="./pages/products.html"
+            >Voir tous les produits <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
       </section>
 
       <section class="social-proof">
@@ -219,7 +221,7 @@
           services et nous avons pris le soin de donner des réponses aux
           questions fréquentes pour vous aider si éventuellement vous avez les
           mêmes préoccupations. Vous pouvez aussi nous
-          <a href="#contact">Contactez</a> directement pour toutes vos
+          <a href="#contact-section">Contactez</a> directement pour toutes vos
           préoccupations.
         </p>
         <div class="questions-div">
@@ -267,7 +269,7 @@
         <button>Commander maintenant</button>
       </section>
 
-      <section class="contact-section">
+      <!-- <section class="contact-section">
         <h2>Contactez-Nous</h2>
         <p class="description">
           Vous pouvez nous joindre via ces différents canaux
@@ -287,13 +289,43 @@
             <p>Cotonou, Bénin, Quartier Gbegamey</p>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <footer id="contact-section">
+      <address>
+        <h2>Contactez-nous</h2>
+        <p class="description">
+          Vous pouvez nous joindre via ces différents canaux.
+        </p>
+        <div class="contacts">
+          <div class="contact1">
+            <h3>Adresse</h3>
+            <p>Cotonou, Bénin, Quartier Gbegamey</p>
+          </div>
+
+          <div class="contact2">
+            <h3>WhatsApp</h3>
+            <!-- <a href="" target="_blank"></a> -->
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div class="contact3">
+            <h3>Contacts téléphoniques</h3>
+            <p><a href="tel:+2290152118061">+2290152118061</a></p>
+          </div>
+
+          <div class="contact4">
+            <h3>Email</h3>
+            <p><a href="mailto:devbyody@gmail.com">devbyody@gmail.com</a></p>
+          </div>
+        </div>
+      </address>
+      <hr />
       <p>Copyright 2026</p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

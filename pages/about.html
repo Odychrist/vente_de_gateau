@@ -14,12 +14,20 @@
   <body>
     <header>
       <h1 class="logo">SweetDelice by Amina</h1>
-      <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+      <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="mobile-div">
+        <button id="btn-close"><i class="fa-solid fa-xmark"></i></button>
+        <nav class="mobile-nav-div">
+          <a href="../index.html">Accueil</a>
+          <a href="./products.html">Produits</a>
+          <a href="./about.html">A propos</a>
+        </nav>
+      </div>
+
       <nav class="nav-div">
         <a href="../index.html">Accueil</a>
         <a href="./products.html">Produits</a>
         <a href="./about.html">A propos</a>
-        <a href="./contact.html">Contact</a>
       </nav>
     </header>
 
@@ -66,9 +74,9 @@
       </section>
 
       <section class="second-section">
-        <h2>Une passion devenue vocation</h2>
+        <img src="../images/patissiere.png" alt="Image de la pâtissière" />
         <div class="description">
-          <img src="../images/patissiere.png" alt="Image de la pâtissière" />
+          <h2>Une passion devenue vocation</h2>
           <p>
             Derrière SweetDelice by Amina, il y a la cheffe
             <span>Amina</span> et ses collaborateurs prêts à vous offir des
@@ -110,8 +118,40 @@
         <button>Commander maintenant</button>
       </section>
     </main>
-    <footer>
-      <p>SweetDelice by Amina - L'art de sublimer vos moments sucrés</p>
+
+    <footer id="contact-section">
+      <address>
+        <h2>Contactez-nous</h2>
+        <p class="description">
+          Vous pouvez nous joindre via ces différents canaux.
+        </p>
+        <div class="contacts">
+          <div class="contact1">
+            <h3>Adresse</h3>
+            <p>Cotonou, Bénin, Quartier Gbegamey</p>
+          </div>
+
+          <div class="contact2">
+            <h3>WhatsApp</h3>
+            <!-- <a href="" target="_blank"></a> -->
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+
+          <div class="contact3">
+            <h3>Contacts téléphoniques</h3>
+            <p><a href="tel:+2290152118061">+2290152118061</a></p>
+          </div>
+
+          <div class="contact4">
+            <h3>Email</h3>
+            <p><a href="mailto:devbyody@gmail.com">devbyody@gmail.com</a></p>
+          </div>
+        </div>
+      </address>
+      <hr />
+      <p>Copyright 2026</p>
     </footer>
+
+    <script src="../script.js"></script>
   </body>
 </html>
