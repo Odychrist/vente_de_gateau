@@ -8,10 +8,9 @@ main {
 .title {
   font-size: 60px;
   font-weight: bold;
-  margin-top: 40px;
   text-align: center;
   width: 80%;
-  margin-bottom: 10px;
+  margin: 20px;
 }
 
 .title span {
@@ -19,7 +18,7 @@ main {
 }
 
 .description {
-  margin: 10px 30px 30px 30px;
+  margin: 0px 30px 30px 30px;
   font-size: 20px;
   text-align: center;
 }
@@ -32,7 +31,7 @@ main {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .title {
     width: 100%;
     font-size: 35px;

@@ -4,19 +4,17 @@ const btnMenu = document.getElementById("btn-menu");
 const specialEl = document.querySelector(".special");
 const titleHero = document.getElementById("hero-title");
 const btnCloseMenu = document.getElementById("btn-close");
+const btnCmd = document.querySelector(".btn-cmd-ctc");
+const year = document.getElementById("year");
 
 btnMenu.addEventListener("click", displayMenu);
 btnCloseMenu.addEventListener("click", hideMenu);
 
 function displayMenu() {
-  /* document.querySelector("main").style.display = "none";
-  document.querySelector("footer").style.display = "none"; */
   menuBar.classList.add("active");
 }
 
 function hideMenu() {
-  /* document.querySelector("main").style.display = "flex";
-  document.querySelector("footer").style.display = "flex"; */
   menuBar.classList.remove("active");
 }
 
@@ -61,28 +59,8 @@ if (index < fullText.length) {
   }, 35);
 }
 
-/* 
-<article class="card">
-  <h3 class="title">Gâteau chocolat</h3>
-  <button class="btn">Commander</button>
-</article>
-
-const buttons = document.querySelectorAll(".btn");
-
-buttons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const card = btn.closest(".card");
-    const title = card.querySelector(".title").textContent;
-
-    const message = `Bonjour j'aimerais commander : ${title}`;
-    const encodedMessage = encodeURIComponent(message);
-
-    const phone = "229XXXXXXXX";
-
-    window.open(`https://wa.me/${phone}?text=${encodedMessage}`, "_blank");
-  });
+btnCmd.addEventListener("click", () => {
+  window.open("https://wa.me/2290152118061", (target = "_blank"));
 });
 
-const message = `Bonjour, je veux commander : ${title}. Pouvez-vous me donner le prix et les détails ?`;
-
-*/
+year.textContent = new Date().getFullYear();

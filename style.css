@@ -188,7 +188,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20px;
+  padding: 20px 30px 20px 30px;
   justify-content: center;
 }
 
@@ -213,7 +213,6 @@ header {
 
 .product-div {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 7px;
   background: #ffffff;
@@ -229,12 +228,10 @@ header {
 }
 
 .product-div h3 {
-  width: 100%;
   opacity: 90%;
   margin-top: 5px;
   padding-bottom: 7px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.486);
-  /* margin-bottom: 20px; */
 }
 
 .product-div .product-description {
@@ -243,13 +240,10 @@ header {
 }
 
 .product-div img {
-  display: block;
-  margin: 0 auto;
-  /* text-align: center; */
+  align-self: center;
   width: 250px;
   height: 200px;
   border-radius: 10px;
-  /* margin-bottom: 20px; */
 }
 
 .product-div .price {
@@ -332,6 +326,7 @@ header {
   opacity: 80%;
   font-size: 17px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .elements-div {
@@ -356,7 +351,7 @@ header {
 .element1 .quote,
 .element2 .quote,
 .element3 .quote {
-  font-size: 30px;
+  font-size: 35px;
   color: #ec4899;
   font-weight: bold;
   margin-bottom: 15px;
@@ -421,7 +416,7 @@ header {
   flex-direction: column;
   gap: 20px;
   background-color: #fdd1ea;
-  padding: 20px;
+  padding: 20px 30px 20px 30px;
 }
 
 .faq-section h2 {
@@ -444,8 +439,7 @@ header {
 }
 
 .question-div {
-  max-width: 300px;
-  /* min-height: 100px; */
+  width: 350px;
   background-color: #fdd8ed;
   color: #ec4899;
   padding: 20px;
@@ -517,6 +511,7 @@ header {
   opacity: 80%;
   font-size: 17px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .cta-section button {
@@ -541,28 +536,6 @@ header {
   transform: scale(0.94);
 }
 
-/* CONTACT SECTION */
-.contact-section {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-section h2 {
-  color: #ec4899;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-}
-
-.contact-section .description {
-  opacity: 80%;
-  font-size: 17px;
-  margin-bottom: 15px;
-}
-
 /* FOOTER SECTION */
 footer {
   display: flex;
@@ -571,7 +544,7 @@ footer {
   flex-direction: column;
   gap: 10px;
   background-color: #251d21;
-  padding: 20px;
+  padding: 20px 30px 20px 30px;
   color: white;
 }
 
@@ -590,6 +563,10 @@ footer .description {
 }
 
 address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-style: normal;
   color: rgb(235, 234, 234);
 }
@@ -603,9 +580,9 @@ address {
 }
 
 .contacts div {
-  height: 100px;
+  height: 130px;
   width: 300px;
-  border: 1px solid #eb278950;
+  border: 1px solid #eb278917;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -632,11 +609,13 @@ address {
 .contact4 a,
 .contact3 a {
   text-decoration: none;
+  color: #eb2789;
 }
 
 .contact2 i {
   font-size: 30px;
   color: #25d366;
+  cursor: pointer;
 }
 
 footer hr {
@@ -646,6 +625,10 @@ footer hr {
   border: 1px solid #e4cdd873;
 }
 
+.crt-special {
+  color: #eb2789;
+}
+
 @media (max-width: 700px) {
   #btn-menu,
   #btn-close {
@@ -653,7 +636,8 @@ footer hr {
   }
 
   .first-div {
-    margin: 0px;
+    /* margin: 0px; */
+    padding: 0px;
   }
 
   .mobile-div.active {
@@ -711,6 +695,12 @@ footer hr {
     text-align: center;
   }
 
+  .product-div img {
+    min-width: 250px;
+    height: 220px;
+    max-width: 270px;
+    /* width: 270px; */
+  }
   /* .products-section .products-div {
     display: flex;
     flex-direction: column;
