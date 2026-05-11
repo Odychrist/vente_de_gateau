@@ -34,7 +34,7 @@ main {
 @media (max-width: 700px) {
   .title {
     width: 100%;
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .description {
