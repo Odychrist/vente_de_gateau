@@ -35,6 +35,7 @@ main {
   .title {
     width: 100%;
     font-size: 32px;
+    margin: 0px 10px 0px 10px;
   }
 
   .description {
